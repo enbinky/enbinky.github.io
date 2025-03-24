@@ -8,7 +8,7 @@
     <link href="/2025/03/24/%E5%A4%A7%E6%B0%94%E6%B1%A1%E6%9F%93%E6%8E%A7%E5%88%B6%E5%B7%A5%E7%A8%8B/"/>
     <url>/2025/03/24/%E5%A4%A7%E6%B0%94%E6%B1%A1%E6%9F%93%E6%8E%A7%E5%88%B6%E5%B7%A5%E7%A8%8B/</url>
     
-    <content type="html"><![CDATA[<h2 id="电除尘器"><a href="#电除尘器" class="headerlink" title="电除尘器"></a>电除尘器</h2><p>标签（特点）：</p><p>​处理气量大；十万到百万（m³&#x2F;h）——对比之下，几百到几千算小的</p><p>​除尘效率高；</p><p>工作原理：单区与双区电除尘器</p><p>​电晕放电机理：金属丝放电，使气体分子离子化并产生大量电子，远离金属丝，离子化过程结束，气体离子化区域为电晕区。自由电子和气体负离子使粒子荷电的电荷主要来源。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="电除尘器"><a href="#电除尘器" class="headerlink" title="电除尘器"></a>电除尘器</h2><p>标签（特点）：</p><p>​处理气量大；十万到百万（m³&#x2F;h）——对比之下，几百到几千算小的</p><p>​除尘效率高；</p><p>工作原理：单区与双区电除尘器</p><p>​电晕放电——粒子荷电</p><p>​电晕放电机理：金属丝放电，使气体分子离子化并产生大量电子，远离金属丝，离子化过程结束，气体离子化区域为电晕区。自由电子和气体负离子使粒子荷电的电荷主要来源。</p><p>​粒子荷电【两种机制】：</p><p>​电场荷电</p><p>​扩散荷电</p><p>​异常荷电现象</p>]]></content>
     
     
     <categories>
@@ -33,7 +33,7 @@
     <link href="/2025/03/21/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/"/>
     <url>/2025/03/21/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/</url>
     
-    <content type="html"><![CDATA[<p>这是我的第一篇博客。<br>我准备用来记录有关于这个博客本身的一切。</p><p>先放一张曼联的图片庆祝一下。<br><img src="man.png" alt="曼联的未来"><br>1.markdown 图片的引用</p><p>2.关于如何更新静态博客</p><p>git bash指令：hexo g -d</p><p>具体解释：</p><p>​hexo g -d 是 Hexo 命令行工具中的两个操作的组合。</p><p>​hexo g：生成静态文件。它会根据你配置的 Hexo 博客内容生成静态网页，这些网页会被放在 public&#x2F; 文件夹中。这是构建过程的一部分。<br>​hexo d：部署博客。生成静态文件之后，hexo d 会将它们部署到你指定的服务器或平台上（如 GitHub Pages、私有服务器等）。<br>​因此，hexo g -d 是这两个操作的组合，意思是“生成并部署”。它会生成静态文件，并自动将这些文件部署到你设置的远程位置上。</p><p>静态博客，在本地编辑文档，再同步更新到github仓库。</p><p>同步需要一个短暂的时间，并不会立刻同步到网站。</p>]]></content>
+    <content type="html"><![CDATA[<p>这是我的第一篇博客。<br>我准备用来记录有关于这个博客本身的一切。</p><h1 id="个人博客-hexo-fluid-github"><a href="#个人博客-hexo-fluid-github" class="headerlink" title="个人博客(hexo + fluid + github)"></a>个人博客(hexo + fluid + github)</h1><p>先放一张曼联的图片庆祝一下。<br><img src="man.png" alt="曼联的未来"></p><h2 id="1-markdown-图片的引用"><a href="#1-markdown-图片的引用" class="headerlink" title="1.markdown 图片的引用"></a>1.markdown 图片的引用</h2><p>markdown操作插入图片</p><p>代码模样：<img src></p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">![](<span class="hljs-link"></span>)<br></code></pre></td></tr></table></figure><h2 id="2-关于如何更新静态博客"><a href="#2-关于如何更新静态博客" class="headerlink" title="2.关于如何更新静态博客"></a>2.关于如何更新静态博客</h2><p>git bash指令：hexo g -d</p><p>具体解释：</p><p>​hexo g -d 是 Hexo 命令行工具中的两个操作的组合。</p><p>​hexo g：生成静态文件。它会根据你配置的 Hexo 博客内容生成静态网页，这些网页会被放在 public&#x2F; 文件夹中。这是构建过程的一部分。<br>​hexo d：部署博客。生成静态文件之后，hexo d 会将它们部署到你指定的服务器或平台上（如 GitHub Pages、私有服务器等）。<br>​因此，hexo g -d 是这两个操作的组合，意思是“生成并部署”。它会生成静态文件，并自动将这些文件部署到你设置的远程位置上。</p><p>静态博客，在本地编辑文档，再同步更新到github仓库。</p><p>同步需要一个短暂的时间，并不会立刻同步到网站。</p><p>别忘了，在每次本地更改完文章后，实时更新博客哦！！！</p><h2 id="3-如何上传新文章"><a href="#3-如何上传新文章" class="headerlink" title="3.如何上传新文章"></a>3.如何上传新文章</h2><p>git bash指令：hexo new post 文章的名字</p>]]></content>
     
     
     
