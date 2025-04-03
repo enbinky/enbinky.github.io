@@ -4,11 +4,24 @@
   
   
   <entry>
+    <title>python</title>
+    <link href="/2025/04/03/python/"/>
+    <url>/2025/04/03/python/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>硅氧烷工具</title>
     <link href="/2025/04/01/%E7%A1%85%E6%B0%A7%E7%83%B7%E5%B7%A5%E5%85%B7/"/>
     <url>/2025/04/01/%E7%A1%85%E6%B0%A7%E7%83%B7%E5%B7%A5%E5%85%B7/</url>
     
-    <content type="html"><![CDATA[<p>功能要求：</p><p>1.调用人工智能接口</p>]]></content>
+    <content type="html"><![CDATA[<p>已经成功实现调用人工智能接口</p><p>功能要求：</p><p>1.将pdf转化为txt文档，并进行适度的改写，改写个锤子，我要弄出来可以卖钱啦！！！册那！！！</p><p>2.对txt文档进行进一步改写</p><p>​以EST为例，章节分为abstract ,1.introduction, 2.materials and methods,3.results and discussions,4.environmental implications 五个部分截取下来，并在每一部分内将行间空格除去进行段落连接。</p><p>1.先将文件夹中的pdf文件中的文本内容提取，写入txt文件。【文献中的中间的问题是表格和图像中的文字信息也会被识别为文字，并单独成段落写入txt文件中，解决方案：小段落字数较少，少于10个字的段落全部删除；然后将有用的正文通过文献中的小标题进行进一步的识别与保留】</p><p>这里有个疑问，为什么一定要先把pdf转化为txt进行后续操作？</p><p>answer：相较于最基本的文件格式txt，pdf更加复杂，不仅是包含多种复杂格式，不支持读写等操作，同时由于其为图像，需使用OCR转化为文本。</p><p>老实说，在这个部分使用AI有点杀鸡用牛刀的感觉。</p><p>在CSDN上看到一个grobid，看看能不能用。</p><p>2025年4月2日</p><p>起码到目前为止，我无法理解与部署grobid，这很困难。对于一个在windows上不提供服务的工具，使用起来难度总是成倍增加的。</p><p>pdf文档解释器开源的很多，但是都没有脑子看懂了。</p><p>2025年4月3日</p><p>成功实现：使用deepseek的api，提取文献的小标题</p>]]></content>
     
     
     
