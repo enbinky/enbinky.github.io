@@ -27,7 +27,7 @@
 <meta property="og:description" content="1.实现模块化编程，跨文件调用python函数概念： 模块和包  模块：一个.py文件就是一个模块，它包含了Python代码和定义。 包：包含多个模块的目录，可以组织大型程序。【有多个模块的一个文件夹】  导入模块  使用import语句来导入模块。 可以使用from ... import ...语句来从模块中导入特定的函数或类。  示例 三级文件结构 1234567main-A--a.py-B-">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-04-03T11:13:13.000Z">
-<meta property="article:modified_time" content="2025-04-05T08:44:35.691Z">
+<meta property="article:modified_time" content="2025-04-24T08:47:29.832Z">
 <meta property="article:author" content="Quincy Gu">
 <meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary_large_image">
@@ -223,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k 字
+          1.5k 字
         
       </span>
     
@@ -234,7 +234,7 @@
         
         
         
-          12 分钟
+          13 分钟
         
       </span>
     
@@ -347,6 +347,10 @@
 <p>代码：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Animal</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, name</span>):<br>        <span class="hljs-comment"># 私有成员变量</span><br>        <span class="hljs-variable language_">self</span>.__name = name<br> <br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">make_sound</span>(<span class="hljs-params">self</span>):<br>        <span class="hljs-comment"># 抽象方法</span><br>        <span class="hljs-keyword">pass</span><br> <br> <br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Cat</span>(<span class="hljs-title class_ inherited__">Animal</span>):<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, name</span>):<br>        <span class="hljs-comment"># 调用父类的构造函数</span><br>        <span class="hljs-built_in">super</span>().__init__(name)<br> <br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">make_sound</span>(<span class="hljs-params">self</span>):<br>        <span class="hljs-built_in">print</span>(<span class="hljs-variable language_">self</span>.__name + <span class="hljs-string">&#x27;猫叫&#x27;</span>)<br> <br> <br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Dog</span>(<span class="hljs-title class_ inherited__">Animal</span>):<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, name</span>):<br>        <span class="hljs-comment"># 调用父类的构造函数</span><br>        <span class="hljs-built_in">super</span>().__init__(name)<br> <br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">make_sound</span>(<span class="hljs-params">self</span>):<br>        <span class="hljs-built_in">print</span>(<span class="hljs-variable language_">self</span>.__name + <span class="hljs-string">&#x27;狗叫&#x27;</span>)<br> <br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string"># Animal类包含一个抽象方法make_sound()，它在子类中被重写，实现了多态。</span><br><span class="hljs-string"># Cat类和Dog类都是Animal类的子类，它们重写了make_sound()方法</span><br><span class="hljs-string"># 使得同一个行为（make_sound()）在不同情况下有不同的表现形式。</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br></code></pre></td></tr></table></figure>
 
+
+
+<h1 id="3-txt文件操作"><a href="#3-txt文件操作" class="headerlink" title="3.txt文件操作"></a>3.txt文件操作</h1><h3 id="文本写入"><a href="#文本写入" class="headerlink" title="文本写入"></a>文本写入</h3><h4 id="读写模式"><a href="#读写模式" class="headerlink" title="读写模式"></a>读写模式</h4><p>w: 写入文件，若文件不存在则会先创建再写入，会覆盖原文件</p>
+<p>a : 写入文件，若文件不存在则会先创建再写入，但不会覆盖原文件，而是追加在文件末尾</p>
 
                 
               </div>
