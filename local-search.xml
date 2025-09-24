@@ -8,7 +8,7 @@
     <link href="/2025/09/24/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
     <url>/2025/09/24/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</url>
     
-    <content type="html"><![CDATA[<h1 id="第一章-行列式"><a href="#第一章-行列式" class="headerlink" title="第一章 行列式"></a>第一章 行列式</h1><h2 id="一、行列式的概念"><a href="#一、行列式的概念" class="headerlink" title="一、行列式的概念"></a>一、行列式的概念</h2><p>三阶及以下用对角线法计算。</p><font color="orange">n阶行列式</font><p>n阶行列式的完全展开式</p><h2 id="二、行列式的性质"><a href="#二、行列式的性质" class="headerlink" title="二、行列式的性质"></a>二、行列式的性质</h2><p>转置行列式</p><p>性质1 转置后，行列式的值不变。</p><script type="math/tex; mode=display">\begin{vmatrix}    A^T\end{vmatrix}=\begin{vmatrix}    A\end{vmatrix}</script><p>性质2 两行或两列互换位置，行列式的值不变。</p><p>​    两行或两列相同，行列式的值为0。</p><p>性质3 数k乘行列式等于用k乘它的某行或某列。</p><p>​    某行或某列的元素全为0，行列式的值为0。</p><p>​    若两行或两列的元素对应成比例，行列式的值为0。</p><p>性质4 行列式可按照某行或某列拆成两个行列式之和。</p><p>性质5 把某行或某列的k倍加到另一行或另一列，行列式的值不变。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="第一章-行列式"><a href="#第一章-行列式" class="headerlink" title="第一章 行列式"></a>第一章 行列式</h1><h2 id="一、行列式的概念"><a href="#一、行列式的概念" class="headerlink" title="一、行列式的概念"></a>一、行列式的概念</h2><p>三阶及以下用对角线法计算。</p><p><font color="orange">n阶行列式</font></p><p>n阶行列式的完全展开式</p><h2 id="二、行列式的性质"><a href="#二、行列式的性质" class="headerlink" title="二、行列式的性质"></a>二、行列式的性质</h2><p>转置行列式</p><p>性质1 转置后，行列式的值不变。<br>$$<br>\begin{vmatrix}<br>A^T<br>\end{vmatrix}<br>&#x3D;<br>\begin{vmatrix}<br>A<br>\end{vmatrix}<br>$$<br>性质2 两行或两列互换位置，行列式的值不变。</p><p>​两行或两列相同，行列式的值为0。</p><p>性质3 数k乘行列式等于用k乘它的某行或某列。</p><p>​某行或某列的元素全为0，行列式的值为0。</p><p>​若两行或两列的元素对应成比例，行列式的值为0。</p><p>性质4 行列式可按照某行或某列拆成两个行列式之和。</p><p>性质5 把某行或某列的k倍加到另一行或另一列，行列式的值不变。</p>]]></content>
     
     
     <categories>
