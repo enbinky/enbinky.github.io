@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>个人博客开发日志</title>
+    <link href="/2025/03/21/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/"/>
+    <url>/2025/03/21/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/</url>
+    
+    <content type="html"><![CDATA[<p>这是我的第一篇博客。<br>我准备用来记录有关于这个博客本身的一切。</p><p>注明：本博客使用的所有图片均非商业用途！！！</p><h1 id="个人博客-hexo-fluid-github"><a href="#个人博客-hexo-fluid-github" class="headerlink" title="个人博客(hexo + fluid + github)"></a>个人博客(hexo + fluid + github)</h1><h2 id="CELEBRATION"><a href="#CELEBRATION" class="headerlink" title="CELEBRATION!"></a>CELEBRATION!</h2><p>先放一张曼联的图片庆祝一下。</p><img src="/2025/03/21/个人博客开发日志/man.png" alt="曼联的未来"><h2 id="1-markdown-图片的引用"><a href="#1-markdown-图片的引用" class="headerlink" title="1.markdown 图片的引用"></a>1.markdown 图片的引用</h2><p>markdown操作插入图片</p><p>代码模样：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">{% asset_img "span>" "" %}<br></code></pre></td></tr></table></figure><h2 id="2-关于如何更新静态博客"><a href="#2-关于如何更新静态博客" class="headerlink" title="2.关于如何更新静态博客"></a>2.关于如何更新静态博客</h2><h3 id="2-1更新静态博客"><a href="#2-1更新静态博客" class="headerlink" title="2.1更新静态博客"></a>2.1更新静态博客</h3><p>git bash指令：hexo g -d</p><p>具体解释：</p><p>​hexo g -d 是 Hexo 命令行工具中的两个操作的组合。</p><p>​hexo g：生成静态文件。它会根据你配置的 Hexo 博客内容生成静态网页，这些网页会被放在 public&#x2F; 文件夹中。这是构建过程的一部分。<br>​hexo d：部署博客。生成静态文件之后，hexo d 会将它们部署到你指定的服务器或平台上（如 GitHub Pages、私有服务器等）。<br>​因此，hexo g -d 是这两个操作的组合，意思是“生成并部署”。它会生成静态文件，并自动将这些文件部署到你设置的远程位置上。</p><p>静态博客，在本地编辑文档，再同步更新到github仓库。</p><p>同步需要一个短暂的时间，并不会立刻同步到网站。</p><p>别忘了，在每次本地更改完文章后，实时更新博客哦！！！</p><h3 id="2-2如何删除博客"><a href="#2-2如何删除博客" class="headerlink" title="2.2如何删除博客"></a>2.2如何删除博客</h3><p>​现在本地把目标文件及同名图片文件夹删除，同时删除本地的 .deploy_git 文件夹。</p><p>git bash指令：</p><p>​hexo clean</p><p>​hexo generate</p><p>​hexo deploy</p><h2 id="3-如何上传新文章"><a href="#3-如何上传新文章" class="headerlink" title="3.如何上传新文章"></a>3.如何上传新文章</h2><p>git bash指令：hexo new post 文章的名字</p><h2 id="4-关于Typora如何修改字体颜色（超级简单版）"><a href="#4-关于Typora如何修改字体颜色（超级简单版）" class="headerlink" title="4.关于Typora如何修改字体颜色（超级简单版）"></a>4.关于Typora如何修改字体颜色（超级简单版）</h2><p>吐槽一下：虽然网上有插件，奈何博主可怜自己的小电脑，往常不仅要跑程序不说，不想再增加它自动启动时的工作量了，所以就推荐代码方法，当然也非常感谢typora一定程度上自动解析代码的功能。</p><p>先致敬感谢一下原作者（原博客链接）：</p><p><a href="https://blog.csdn.net/starryhorizon/article/details/121788158">https://blog.csdn.net/starryhorizon/article/details/121788158</a></p><p>代码展示：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">&lt;fontcolor=&#x27;orange&#x27;&gt;输入的文本<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><br></code></pre></td></tr></table></figure><p>一些颜色展示：</p><img src="/2025/03/21/个人博客开发日志/platte.png" alt="调色盘"><p><a href="https://www.flatuicolorpicker.com/">https://www.flatuicolorpicker.com/</a> 在这个网站里，你可以找到自己喜欢的其他颜色。</p><h2 id="5-关于如何实现typora页内跳转"><a href="#5-关于如何实现typora页内跳转" class="headerlink" title="5.关于如何实现typora页内跳转"></a>5.关于如何实现typora页内跳转</h2><p>这里只介绍一种方式，直接代码展示</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-comment">&lt;!-- 在网页开发中，href 是 HTML（超文本标记语言）中的一个属性，用于定义一个链接的目标地址。href 是 &quot;Hypertext Reference&quot;（超文本引用）的缩写。 --&gt;</span><br><span class="hljs-comment">&lt;!-- 这串代码包含点击跳转的标题，相当于索引 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#页内跳转&quot;</span>&gt;</span>typora文本内容<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><br><br><span class="hljs-comment">&lt;!-- 这串代码放置锚点 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;页内跳转&quot;</span>&gt;</span>typora文本内容<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><br></code></pre></td></tr></table></figure><p>备注：</p><p>​1.业内跳转通过标识符进行连接，索引标识符前需要加上”#”</p><p>​2.此功能只能实现单向的跳转，并不能实现双向的回退跳转。</p><p>问题：在浏览器内，总是会跳转至下一行，浏览器的页头并不是跳转的标题，不知道是什么问题~</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>软件开发</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>个人博客</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2025/03/21/hello-world/"/>
+    <url>/2025/03/21/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
