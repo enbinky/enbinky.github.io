@@ -19,15 +19,15 @@
   <meta name="author" content="Quincy Gu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="格式：源代码+未知知识学习 1.np.array().reshape() 123456789101112house_sizes &#x3D; np.array([50, 60, 70, 80, 90, 100, 110, 120]).reshape(-1, 1)&#x27;&#x27;&#x27;output:通过reshape函数，输出一个8×1的二维数组[[ 50] [ 60] [ 70] [ 80]">
+    <meta name="description" content="库12345# 导入需要的库import numpy as npimport matplotlib.pyplot as pltfrom sklearn.linear_model import LinearRegressionimport seaborn as sns  numpy：专门做数值计算，提供高效数组、矩阵运算，是所有数据库的底层基础。用于高效的数值计算，是几乎所有科学计算库的基础。 Pa">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MachineLearning_code">
 <meta property="og:url" content="http://example.com/2026/01/04/MachineLearning-code/index.html">
 <meta property="og:site_name" content="Quincy的博客">
-<meta property="og:description" content="格式：源代码+未知知识学习 1.np.array().reshape() 123456789101112house_sizes &#x3D; np.array([50, 60, 70, 80, 90, 100, 110, 120]).reshape(-1, 1)&#x27;&#x27;&#x27;output:通过reshape函数，输出一个8×1的二维数组[[ 50] [ 60] [ 70] [ 80]">
+<meta property="og:description" content="库12345# 导入需要的库import numpy as npimport matplotlib.pyplot as pltfrom sklearn.linear_model import LinearRegressionimport seaborn as sns  numpy：专门做数值计算，提供高效数组、矩阵运算，是所有数据库的底层基础。用于高效的数值计算，是几乎所有科学计算库的基础。 Pa">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-01-04T02:44:41.000Z">
-<meta property="article:modified_time" content="2026-01-04T02:53:02.794Z">
+<meta property="article:modified_time" content="2026-03-31T02:58:41.788Z">
 <meta property="article:author" content="Quincy Gu">
 <meta property="article:tag" content="AI and DataAnalysis">
 <meta name="twitter:card" content="summary_large_image">
@@ -223,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          170 字
+          1.1k 字
         
       </span>
     
@@ -234,7 +234,7 @@
         
         
         
-          2 分钟
+          10 分钟
         
       </span>
     
@@ -285,18 +285,40 @@
             
               <div class="markdown-body">
                 
-                <p>格式：源代码+未知知识学习</p>
-<p>1.np.array().reshape()</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs python">house_sizes = np.array([<span class="hljs-number">50</span>, <span class="hljs-number">60</span>, <span class="hljs-number">70</span>, <span class="hljs-number">80</span>, <span class="hljs-number">90</span>, <span class="hljs-number">100</span>, <span class="hljs-number">110</span>, <span class="hljs-number">120</span>]).reshape(-<span class="hljs-number">1</span>, <span class="hljs-number">1</span>)<br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string">output:通过reshape函数，输出一个8×1的二维数组</span><br><span class="hljs-string">[[ 50]</span><br><span class="hljs-string"> [ 60]</span><br><span class="hljs-string"> [ 70]</span><br><span class="hljs-string"> [ 80]</span><br><span class="hljs-string"> [ 90]</span><br><span class="hljs-string"> [100]</span><br><span class="hljs-string"> [110]</span><br><span class="hljs-string"> [120]]</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br></code></pre></td></tr></table></figure>
+                <h1 id="库"><a href="#库" class="headerlink" title="库"></a>库</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 导入需要的库</span><br><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np<br><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><span class="hljs-keyword">from</span> sklearn.linear_model <span class="hljs-keyword">import</span> LinearRegression<br><span class="hljs-keyword">import</span> seaborn <span class="hljs-keyword">as</span> sns<br></code></pre></td></tr></table></figure>
+
+<p>numpy：专门做<strong>数值计算</strong>，提供高效数组、矩阵运算，是所有数据库的<strong>底层基础</strong>。用于高效的数值计算，是几乎所有科学计算库的基础。</p>
+<p>Pandas：用于数据清洗、分析和处理，操作数据表格（DataFrame）的利器。</p>
+<p>matplotlib：Python 最基础的<strong>绘图库</strong>，能画折线图、柱状图、散点图等所有基础图表。</p>
+<p>seaborn：基于 Matplotlib <strong>美化版绘图库</strong>，画统计图表更美观、代码更简单。</p>
+<p>sklearn（Scikit-learn）：专门做<strong>机器学习</strong>，封装了分类、回归、聚类、降维等所有经典算法。</p>
+<h1 id="机器学习算法"><a href="#机器学习算法" class="headerlink" title="机器学习算法"></a>机器学习算法</h1><h2 id="K-近邻算法（KNN）"><a href="#K-近邻算法（KNN）" class="headerlink" title="K-近邻算法（KNN）"></a>K-近邻算法（KNN）</h2><p>一种<strong>非参数化</strong>、<strong>懒惰学习</strong>的监督学习算法，可用于分类和回归任务。</p>
+<p><strong>对一个新样本，找到训练集中距离最近的K个邻居，根据这些邻居的类别或数值来预测新样本的类别或数值</strong>。</p>
+<h1 id="源代码-未知知识学习"><a href="#源代码-未知知识学习" class="headerlink" title="源代码+未知知识学习"></a>源代码+未知知识学习</h1><h2 id="1-np-array-reshape"><a href="#1-np-array-reshape" class="headerlink" title="1.np.array().reshape()"></a>1.np.array().reshape()</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs python">house_sizes = np.array([<span class="hljs-number">50</span>, <span class="hljs-number">60</span>, <span class="hljs-number">70</span>, <span class="hljs-number">80</span>, <span class="hljs-number">90</span>, <span class="hljs-number">100</span>, <span class="hljs-number">110</span>, <span class="hljs-number">120</span>]).reshape(-<span class="hljs-number">1</span>, <span class="hljs-number">1</span>)<br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string">output:通过reshape函数，输出一个8×1的二维数组</span><br><span class="hljs-string">[[ 50]</span><br><span class="hljs-string"> [ 60]</span><br><span class="hljs-string"> [ 70]</span><br><span class="hljs-string"> [ 80]</span><br><span class="hljs-string"> [ 90]</span><br><span class="hljs-string"> [100]</span><br><span class="hljs-string"> [110]</span><br><span class="hljs-string"> [120]]</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br></code></pre></td></tr></table></figure>
 
 <ul>
-<li><code>.reshape()</code>：是 NumPy 数组（ndarray）的内置方法，用于<strong>改变数组的形状（维度），但不改变数组中元素的总数和元素本身</strong>。</li>
-<li>参数详解：<ul>
-<li>第二个参数<code>1</code>：明确指定数组的<strong>第二维（列数）为 1</strong>。</li>
-<li>第一个参数<code>-1</code>：这是 NumPy 中<code>reshape</code>方法的<strong>特殊占位符</strong>，含义是 “让 NumPy 自动计算该维度的大小”，计算的依据是 “数组总元素数不变”。</li>
-</ul>
+<li><p><code>.reshape()</code>：是 NumPy 数组（ndarray）的内置方法，用于<strong>改变数组的形状（维度），但不改变数组中元素的总数和元素本身</strong>。</p>
+</li>
+<li><p>参数详解：</p>
+<p>第一个参数<code>-1</code>：这是 NumPy 中<code>reshape</code>方法的<strong>特殊占位符</strong>，含义是 <strong>“让 NumPy 自动计算该维度的大小”</strong>，计算的依据是 “数组总元素数不变”。</p>
+<p>第二个参数<code>1</code>：明确指定数组的<strong>第二维（列数）为 1</strong></p>
 </li>
 </ul>
+<h2 id="2-numpy的布尔索引"><a href="#2-numpy的布尔索引" class="headerlink" title="2.numpy的布尔索引"></a>2.numpy的布尔索引</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">plt.scatter(X_train[y_train == <span class="hljs-number">0</span>, <span class="hljs-number">0</span>], X_train[y_train == <span class="hljs-number">0</span>, <span class="hljs-number">1</span>], color=<span class="hljs-string">&#x27;blue&#x27;</span>, label=<span class="hljs-string">&#x27;Class 0&#x27;</span>)<br>plt.scatter(X_train[y_train == <span class="hljs-number">1</span>, <span class="hljs-number">0</span>], X_train[y_train == <span class="hljs-number">1</span>, <span class="hljs-number">1</span>], color=<span class="hljs-string">&#x27;red&#x27;</span>, label=<span class="hljs-string">&#x27;Class 1&#x27;</span>)<br></code></pre></td></tr></table></figure>
+
+<p><strong>机器学习二分类数据可视化</strong>的经典写法，核心难点是 <code>numpy</code> 的<strong>布尔索引</strong></p>
+<p><strong><code>plt.scatter(x, y)</code></strong></p>
+<p>绘制<strong>二维散点图</strong>，必须传入两组数据：x 轴坐标 + y 轴坐标</p>
+<p><strong><code>X_train[y_train == 0, 0]</code> → x 轴坐标</strong></p>
+<p>这是 <code>numpy</code> 高级索引（核心！）</p>
+<ul>
+<li><code>y_train == 0</code>：<strong>筛选出所有标签 &#x3D; 0 的样本行</strong></li>
+<li>后面的 <code>0</code>：取这些样本的<strong>第 0 列特征</strong>（作为散点的 x 坐标）</li>
+</ul>
+<p><strong><code>color=&#39;blue&#39;</code></strong>：类别 0 的点用<strong>蓝色</strong></p>
+<p><strong><code>label=&#39;Class 0&#39;</code></strong>：图例显示 “类别 0”</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 绘制决策边界</span><br>h = <span class="hljs-number">.02</span>  <span class="hljs-comment"># 网格步长</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string">含义：定义网格步长（网格点之间的距离）</span><br><span class="hljs-string">作用：控制决策边界的细腻程度</span><br><span class="hljs-string">h 越小（如 0.01）：边界越光滑，计算越慢</span><br><span class="hljs-string">h 越大（如 0.1）：边界越粗糙，计算更快</span><br><span class="hljs-string">固定写 0.02 是通用最优选择</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br>x_min, x_max = X_train[:, <span class="hljs-number">0</span>].<span class="hljs-built_in">min</span>() - <span class="hljs-number">1</span>, X_train[:, <span class="hljs-number">0</span>].<span class="hljs-built_in">max</span>() + <span class="hljs-number">1</span><br>y_min, y_max = X_train[:, <span class="hljs-number">1</span>].<span class="hljs-built_in">min</span>() - <span class="hljs-number">1</span>, X_train[:, <span class="hljs-number">1</span>].<span class="hljs-built_in">max</span>() + <span class="hljs-number">1</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string">X_train[:,0]：所有样本的第一个特征（x 轴）;X_train[:,1]：所有样本的第二个特征（y 轴）;-1 和 +1：给图表留 1 个单位的空白边距，不让数据点贴在边框上</span><br><span class="hljs-string">最终得到：整个绘图平面的最小 / 最大坐标范围</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br>xx, yy = np.meshgrid(np.arange(x_min, x_max, h),<br>                     np.arange(y_min, y_max, h))<br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string">np.arange(范围, 步长)：生成一串连续的坐标数字</span><br><span class="hljs-string">np.meshgrid()：把 x 和 y 坐标交叉组合，铺满整个平面</span><br><span class="hljs-string">结果：生成成千上万个均匀分布的网格点（覆盖整个绘图区域）</span><br><span class="hljs-string">大白话：给整个平面打满 “点阵”，每个点都要让 KNN 预测类别</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br>Z = knn.predict(np.c_[xx.ravel(), yy.ravel()])<br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string">xx.ravel() / yy.ravel()：把二维网格拉平成一维数组</span><br><span class="hljs-string">np.c_[]：把 x 和 y 坐标拼接成二维特征矩阵（和训练集格式一致）</span><br><span class="hljs-string">knn.predict()：让 KNN 模型预测每一个网格点属于哪个类别</span><br><span class="hljs-string">Z：存储所有网格点的预测结果（0 或 1）</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br>Z = Z.reshape(xx.shape)<br><span class="hljs-string">&#x27;把一维的预测结果Z，还原成和网格 xx/yy 一样的二维形状.只有形状匹配，才能画出色块区域&#x27;</span><br><br>plt.contourf(xx, yy, Z, alpha=<span class="hljs-number">0.3</span>, cmap=plt.cm.RdBu)<br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string">plt.contourf()：绘制等高线填充图（分类色块）</span><br><span class="hljs-string">xx, yy：网格坐标</span><br><span class="hljs-string">Z：每个点的预测类别</span><br><span class="hljs-string">alpha=0.3：透明度 30%（不遮挡后面的散点）</span><br><span class="hljs-string">cmap=plt.cm.RdBu：配色方案（红 - 蓝，对应类别 1/0）</span><br><span class="hljs-string">最终效果：平面被分成蓝色区域（类别 0）、红色区域（类别 1）</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br></code></pre></td></tr></table></figure>
+
 
                 
               </div>
