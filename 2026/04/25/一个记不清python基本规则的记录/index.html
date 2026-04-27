@@ -27,7 +27,7 @@
 <meta property="og:description" content="1.Python虚拟环境我们为什么需要虚拟环境？答：当我们代码和项目接触很多的时候，不可避免地会遇到python依赖包冲突的问题。因此，针对不同项目，熟悉并了解其运行环境成为软件工程师的基本能力之一。虚拟环境可以实现项目隔离与避免污染。我们可以通过通过 requirements.txt 精确记录和复现环境。 使用流程123456789# 只介绍Windows系统下如何运行虚拟环境# 首先要保证系统">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-04-24T16:29:05.000Z">
-<meta property="article:modified_time" content="2026-04-24T16:40:01.181Z">
+<meta property="article:modified_time" content="2026-04-27T03:34:36.052Z">
 <meta property="article:author" content="Quincy Gu">
 <meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary_large_image">
@@ -223,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          219 字
+          240 字
         
       </span>
     
@@ -234,7 +234,7 @@
         
         
         
-          2 分钟
+          3 分钟
         
       </span>
     
@@ -289,6 +289,10 @@
 <h2 id="使用流程"><a href="#使用流程" class="headerlink" title="使用流程"></a>使用流程</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 只介绍Windows系统下如何运行虚拟环境</span><br><br><span class="hljs-comment"># 首先要保证系统中存在python</span><br><br><span class="hljs-comment"># 在目标项目的目录下创建虚拟环境（命名为&#x27;.venv&#x27;是常见约定）</span><br>python3 -m venv .venv<br><br><span class="hljs-comment"># 激活 Windows（CMD / PowerShell）</span><br>.venv\Scripts\activate<br></code></pre></td></tr></table></figure>
 
 <p><font color="RedOrange">注：在VSC中我遭遇了Powershell中无法激活的问题，需要将终端改至CMD中方可激活虚拟环境。</font></p>
+<p>解决方案：<strong>豆包AI提供</strong></p>
+<p>在新的Powershell窗口执行命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">Set-ExecutionPolicy RemoteSigned -Scope CurrentUser<br></code></pre></td></tr></table></figure>
+
 
                 
               </div>
