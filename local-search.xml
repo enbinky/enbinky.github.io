@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>小龙虾养成日志</title>
+    <link href="/2026/05/21/%E5%B0%8F%E9%BE%99%E8%99%BE%E5%85%BB%E6%88%90%E6%97%A5%E5%BF%97/"/>
+    <url>/2026/05/21/%E5%B0%8F%E9%BE%99%E8%99%BE%E5%85%BB%E6%88%90%E6%97%A5%E5%BF%97/</url>
+    
+    <content type="html"><![CDATA[<p>Openclaw</p><p>我的openclaw对接的推理模型是 deepseek-v4-flash。</p><h1 id="Gateway"><a href="#Gateway" class="headerlink" title="Gateway"></a>Gateway</h1><p>在下载完小龙虾后，如果想要打开完整版的小龙虾，需要执行以下指令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">openclaw gateway<br><span class="hljs-comment"># 该终端不能关闭，才能使用完整版的小龙虾</span><br><br>openclaw tui<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Openclaw</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>一个记不清python基本规则的记录</title>
     <link href="/2026/04/25/%E4%B8%80%E4%B8%AA%E8%AE%B0%E4%B8%8D%E6%B8%85python%E5%9F%BA%E6%9C%AC%E8%A7%84%E5%88%99%E7%9A%84%E8%AE%B0%E5%BD%95/"/>
     <url>/2026/04/25/%E4%B8%80%E4%B8%AA%E8%AE%B0%E4%B8%8D%E6%B8%85python%E5%9F%BA%E6%9C%AC%E8%A7%84%E5%88%99%E7%9A%84%E8%AE%B0%E5%BD%95/</url>
@@ -27,7 +46,7 @@
     <link href="/2026/04/24/%E4%B8%80%E4%B8%AA%E8%AE%B0%E4%B8%8D%E6%B8%85bash%E5%9F%BA%E6%9C%AC%E8%A7%84%E5%88%99%E7%9A%84%E8%AE%B0%E5%BD%95/"/>
     <url>/2026/04/24/%E4%B8%80%E4%B8%AA%E8%AE%B0%E4%B8%8D%E6%B8%85bash%E5%9F%BA%E6%9C%AC%E8%A7%84%E5%88%99%E7%9A%84%E8%AE%B0%E5%BD%95/</url>
     
-    <content type="html"><![CDATA[<h1 id="ollama"><a href="#ollama" class="headerlink" title="ollama"></a>ollama</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 启动服务</span><br>ollama serve<br><br><span class="hljs-comment"># 下载模型</span><br>ollama pull [name]<br><br><span class="hljs-comment"># 根据 Modelfile 创建自定义模型</span><br>ollama create [Modelfile_Path]<br><br><span class="hljs-comment"># 删除模型</span><br>ollama <span class="hljs-built_in">rm</span> [name]<br></code></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><h2 id="将本地项目上传到Github仓库"><a href="#将本地项目上传到Github仓库" class="headerlink" title="将本地项目上传到Github仓库"></a>将本地项目上传到Github仓库</h2><p><strong>还没有成功，暂时不要用</strong></p><p>前置条件：在 GitHub 上创建一个新的空白仓库</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 第一步：初始化本地Git仓库</span><br><span class="hljs-built_in">cd</span> [实际项目路径]<br>git init<br><br><span class="hljs-comment"># 先在.gitignore文件放置不想上传的文件</span><br><span class="hljs-comment"># 第二步：再添加所有文件到暂存区</span><br>git add .<br><br><span class="hljs-comment"># 第三步：提交更改</span><br>git commit -m <span class="hljs-string">&quot;Initial commit&quot;</span><br><span class="hljs-comment"># 将 &quot;Initial commit&quot; 替换为你本次提交的简短描述，例如 &quot;首次提交项目代码&quot;。</span><br><br>git branch -M main<br><br><span class="hljs-comment"># 第四步：关联本地仓库与 GitHub 上的仓库</span><br><span class="hljs-comment"># 将一个已有的本地仓库推送到这个远程仓库</span><br>git remote add origin https://github.com/你的GitHub用户名/你的仓库名.git<br>git remote add origin git@github.com:enbinky/SiloxaneExpert.git<br><br><span class="hljs-comment"># 第六步：将本地代码推送到 GitHub 仓库</span><br>git push -u origin main<br></code></pre></td></tr></table></figure><h1 id="ollama"><a href="#ollama" class="headerlink" title="ollama"></a>ollama</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 启动服务</span><br>ollama serve<br><br><span class="hljs-comment"># 下载模型</span><br>ollama pull [name]<br><br><span class="hljs-comment"># 根据 Modelfile 创建自定义模型</span><br>ollama create [Modelfile_Path]<br><br><span class="hljs-comment"># 删除模型</span><br>ollama <span class="hljs-built_in">rm</span> [name]<br></code></pre></td></tr></table></figure>]]></content>
     
     
     
