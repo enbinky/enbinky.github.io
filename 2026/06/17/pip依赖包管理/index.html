@@ -19,25 +19,22 @@
   <meta name="author" content="Quincy Gu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="这是我的第一篇博客。我准备用来记录有关于这个博客本身的一切。 注明：本博客使用的所有图片均非商业用途！！！ 个人博客(hexo + fluid + github)CELEBRATION!先放一张曼联的图片庆祝一下。     1.markdown 图片的引用markdown操作插入图片 代码模样： 1{% asset_img &quot;span&gt;&quot; &quot;&quot; %}    2.关于如何更新静态博客2.1更新静态博">
+    <meta name="description" content="📦 Information Resources【Pip】如何清理 pip 包管理器 —— 完整指南_pip清除没用的包-CSDN博客 【Python包管理避坑指南】一键摸清已装pip包，轻松卸载无用依赖_pip清除没用的包-CSDN博客 📦Blog Body首先回答问题：为什么我们需要清理pip依赖包？Ans：在python开发过程中，python拥有众多优秀且功能复杂的依赖包，熟练使用依赖包">
 <meta property="og:type" content="article">
-<meta property="og:title" content="个人博客开发日志">
-<meta property="og:url" content="http://example.com/2025/03/21/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/index.html">
+<meta property="og:title" content="pip依赖包管理">
+<meta property="og:url" content="http://example.com/2026/06/17/pip%E4%BE%9D%E8%B5%96%E5%8C%85%E7%AE%A1%E7%90%86/index.html">
 <meta property="og:site_name" content="Quincy的博客">
-<meta property="og:description" content="这是我的第一篇博客。我准备用来记录有关于这个博客本身的一切。 注明：本博客使用的所有图片均非商业用途！！！ 个人博客(hexo + fluid + github)CELEBRATION!先放一张曼联的图片庆祝一下。     1.markdown 图片的引用markdown操作插入图片 代码模样： 1{% asset_img &quot;span&gt;&quot; &quot;&quot; %}    2.关于如何更新静态博客2.1更新静态博">
+<meta property="og:description" content="📦 Information Resources【Pip】如何清理 pip 包管理器 —— 完整指南_pip清除没用的包-CSDN博客 【Python包管理避坑指南】一键摸清已装pip包，轻松卸载无用依赖_pip清除没用的包-CSDN博客 📦Blog Body首先回答问题：为什么我们需要清理pip依赖包？Ans：在python开发过程中，python拥有众多优秀且功能复杂的依赖包，熟练使用依赖包">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2025/03/21/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/man.png">
-<meta property="og:image" content="http://example.com/2025/03/21/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/platte.png">
-<meta property="article:published_time" content="2025-03-21T05:28:50.000Z">
-<meta property="article:modified_time" content="2026-03-02T05:15:14.606Z">
+<meta property="article:published_time" content="2026-06-17T06:58:48.000Z">
+<meta property="article:modified_time" content="2026-06-17T07:01:06.005Z">
 <meta property="article:author" content="Quincy Gu">
-<meta property="article:tag" content="个人博客">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2025/03/21/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/man.png">
   
   
   
-  <title>个人博客开发日志 - Quincy的博客</title>
+  <title>pip依赖包管理 - Quincy的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +200,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="个人博客开发日志"></span>
+            <span id="subtitle" data-typed-text="pip依赖包管理"></span>
           
         </div>
 
@@ -214,8 +211,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-03-21 13:28" pubdate>
-          2025年3月21日 下午
+        <time datetime="2026-06-17 14:58" pubdate>
+          2026年6月17日 下午
         </time>
       </span>
     
@@ -226,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          908 字
+          499 字
         
       </span>
     
@@ -237,7 +234,7 @@
         
         
         
-          8 分钟
+          5 分钟
         
       </span>
     
@@ -283,60 +280,24 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">个人博客开发日志</h1>
+            <h1 id="seo-header">pip依赖包管理</h1>
             
             
               <div class="markdown-body">
                 
-                <p>这是我的第一篇博客。<br>我准备用来记录有关于这个博客本身的一切。</p>
-<p>注明：本博客使用的所有图片均非商业用途！！！</p>
-<h1 id="个人博客-hexo-fluid-github"><a href="#个人博客-hexo-fluid-github" class="headerlink" title="个人博客(hexo + fluid + github)"></a>个人博客(hexo + fluid + github)</h1><h2 id="CELEBRATION"><a href="#CELEBRATION" class="headerlink" title="CELEBRATION!"></a>CELEBRATION!</h2><p>先放一张曼联的图片庆祝一下。</p>
-<img src="/2025/03/21/个人博客开发日志/man.png" srcset="/img/loading.gif" lazyload alt="曼联的未来">
+                <h1 id="📦-Information-Resources"><a href="#📦-Information-Resources" class="headerlink" title="📦 Information Resources"></a>📦 Information Resources</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Stromboli/article/details/143825713">【Pip】如何清理 <code>pip</code> 包管理器 —— 完整指南_pip清除没用的包-CSDN博客</a><br> <a target="_blank" rel="noopener" href="https://blog.csdn.net/2301_77485708/article/details/155234710">【Python包管理避坑指南】一键摸清已装pip包，轻松卸载无用依赖_pip清除没用的包-CSDN博客</a></p>
+<h1 id="📦Blog-Body"><a href="#📦Blog-Body" class="headerlink" title="📦Blog Body"></a>📦Blog Body</h1><h2 id="首先回答问题：为什么我们需要清理pip依赖包？"><a href="#首先回答问题：为什么我们需要清理pip依赖包？" class="headerlink" title="首先回答问题：为什么我们需要清理pip依赖包？"></a>首先回答问题：为什么我们需要清理pip依赖包？</h2><p>Ans：在python开发过程中，python拥有众多优秀且功能复杂的依赖包，熟练使用依赖包是熟练使用python的关键。但是与管理编译环境版本一样，随着开发的深入，为了预防依赖包之间的冲突，我们需要使用<a href="%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%EF%BC%9F">虚拟环境</a>进行开发。在此之前，一个干净的pip就很重要了，便于之后构建虚拟环境之后进行依赖包管理与版本管理。（特此申明：本人无任何方面的处女情结！！！）</p>
+<h2 id="如何清理pip依赖包"><a href="#如何清理pip依赖包" class="headerlink" title="如何清理pip依赖包"></a>如何清理pip依赖包</h2><p>在安装 Python 包时，pip 会默认缓存下载的包。这使得重新安装相同的包时能够更快地完成，因为它可以从缓存中获取，而不需要重新下载。然而，这也会随着时间的推移，占用大量的磁盘空间。尤其是在频繁安装、卸载包时，缓存内容会变得冗余，甚至可能会存储过时的文件，影响 pip 的性能。<br> 所以需要清除pip缓存</p>
+<h3 id="清除pip缓存"><a href="#清除pip缓存" class="headerlink" title="清除pip缓存"></a>清除pip缓存</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 删除所有缓存文件</span><br>pip cache purge<br></code></pre></td></tr></table></figure>
 
+<h3 id="卸载依赖包"><a href="#卸载依赖包" class="headerlink" title="卸载依赖包"></a>卸载依赖包</h3><p>查看当前环境的依赖包和版本</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 查看当前环境的依赖包与版本</span><br>pip list<br><span class="hljs-comment"># 查看某一个特定的包</span><br>pip show &lt;package-name&gt;<br></code></pre></td></tr></table></figure>
 
+<p>批量卸载依赖包</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 导出pip所有依赖包</span><br>pip freeze &gt; requirements.txt<br><span class="hljs-comment"># 执行指令后，在根目录下，将所有包及版本以“包名==版本号”的格式导出到文件 requirements.txt 中，可用于迁移/回溯/批量删除</span><br><span class="hljs-comment"># 卸载 requirements.txt 文件中的依赖包</span><br>pip uninstall -r requirements.txt -y<br></code></pre></td></tr></table></figure>
 
-<h2 id="1-markdown-图片的引用"><a href="#1-markdown-图片的引用" class="headerlink" title="1.markdown 图片的引用"></a>1.markdown 图片的引用</h2><p>markdown操作插入图片</p>
-<p>代码模样：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">{% asset_img "span>" "" %}<br></code></pre></td></tr></table></figure>
-
-
-
-<h2 id="2-关于如何更新静态博客"><a href="#2-关于如何更新静态博客" class="headerlink" title="2.关于如何更新静态博客"></a>2.关于如何更新静态博客</h2><h3 id="2-1更新静态博客"><a href="#2-1更新静态博客" class="headerlink" title="2.1更新静态博客"></a>2.1更新静态博客</h3><p>git bash指令：hexo g -d</p>
-<p>具体解释：</p>
-<p>​	hexo g -d 是 Hexo 命令行工具中的两个操作的组合。</p>
-<p>​	hexo g：生成静态文件。它会根据你配置的 Hexo 博客内容生成静态网页，这些网页会被放在 public&#x2F; 文件夹中。这是构建过程的一部分。<br>​	hexo d：部署博客。生成静态文件之后，hexo d 会将它们部署到你指定的服务器或平台上（如 GitHub Pages、私有服务器等）。<br>​	因此，hexo g -d 是这两个操作的组合，意思是“生成并部署”。它会生成静态文件，并自动将这些文件部署到你设置的远程位置上。</p>
-<p>静态博客，在本地编辑文档，再同步更新到github仓库。</p>
-<p>同步需要一个短暂的时间，并不会立刻同步到网站。</p>
-<p>别忘了，在每次本地更改完文章后，实时更新博客哦！！！</p>
-<h3 id="2-2如何删除博客"><a href="#2-2如何删除博客" class="headerlink" title="2.2如何删除博客"></a>2.2如何删除博客</h3><p>​	现在本地把目标文件及同名图片文件夹删除，同时删除本地的 .deploy_git 文件夹。</p>
-<p>git bash指令：</p>
-<p>​	hexo clean</p>
-<p>​	hexo generate</p>
-<p>​	hexo deploy</p>
-<h2 id="3-如何上传新文章"><a href="#3-如何上传新文章" class="headerlink" title="3.如何上传新文章"></a>3.如何上传新文章</h2><p>git bash指令：hexo new post 文章的名字</p>
-<h2 id="4-字体"><a href="#4-字体" class="headerlink" title="4. 字体"></a>4. 字体</h2><h2 id="4-1关于Typora如何修改字体颜色（超级简单版）"><a href="#4-1关于Typora如何修改字体颜色（超级简单版）" class="headerlink" title="4.1关于Typora如何修改字体颜色（超级简单版）"></a>4.1关于Typora如何修改字体颜色（超级简单版）</h2><p>吐槽一下：虽然网上有插件，奈何博主可怜自己的小电脑，往常不仅要跑程序不说，不想再增加它自动启动时的工作量了，所以就推荐代码方法，当然也非常感谢typora一定程度上自动解析代码的功能。</p>
-<p>先致敬感谢一下原作者（原博客链接）：</p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/starryhorizon/article/details/121788158">https://blog.csdn.net/starryhorizon/article/details/121788158</a></p>
-<p>代码展示：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">&lt;fontcolor=&#x27;orange&#x27;&gt;输入的文本<span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span><br></code></pre></td></tr></table></figure>
-
-<p>一些颜色展示：</p>
-<img src="/2025/03/21/个人博客开发日志/platte.png" srcset="/img/loading.gif" lazyload alt="调色盘">
-
-
-
-<p><a target="_blank" rel="noopener" href="https://www.flatuicolorpicker.com/">https://www.flatuicolorpicker.com/</a> 在这个网站里，你可以找到自己喜欢的其他颜色。</p>
-<h2 id="4-2-字体模式"><a href="#4-2-字体模式" class="headerlink" title="4.2 字体模式"></a>4.2 字体模式</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs html">markdown速查表<br>加粗	文本	**文本** 或 __文本__<br>斜体	文本	*文本* 或 _文本_<br>加粗斜体	文本 ***文本***<br>删除线	  文本	~~文本~~<br>下划线	文本	<span class="hljs-tag">&lt;<span class="hljs-name">u</span>&gt;</span>文本<span class="hljs-tag">&lt;/<span class="hljs-name">u</span>&gt;</span><br>上标	文本上标	文本^上标^<br>下标	文本下标	文本~下标~<br>小号字体	小号字体	<span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>小号字体<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span><br>大号字体	大号字体	<span class="hljs-tag">&lt;<span class="hljs-name">big</span>&gt;</span>大号字体<span class="hljs-tag">&lt;/<span class="hljs-name">big</span>&gt;</span><br><br>↑ $\uparrow$<br>↓ $\downarrow$<br></code></pre></td></tr></table></figure>
-
-
-
-<h2 id="5-关于如何实现typora页内跳转"><a href="#5-关于如何实现typora页内跳转" class="headerlink" title="5.关于如何实现typora页内跳转"></a>5.关于如何实现typora页内跳转</h2><p>这里只介绍一种方式，直接代码展示</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-comment">&lt;!-- 在网页开发中，href 是 HTML（超文本标记语言）中的一个属性，用于定义一个链接的目标地址。href 是 &quot;Hypertext Reference&quot;（超文本引用）的缩写。 --&gt;</span><br><span class="hljs-comment">&lt;!-- 这串代码包含点击跳转的标题，相当于索引 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#页内跳转&quot;</span>&gt;</span>typora文本内容<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><br><br><span class="hljs-comment">&lt;!-- 这串代码放置锚点 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;页内跳转&quot;</span>&gt;</span>typora文本内容<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><br></code></pre></td></tr></table></figure>
-
-<p>备注：</p>
-<p>​	1.业内跳转通过标识符进行连接，索引标识符前需要加上”#”</p>
-<p>​	2.此功能只能实现单向的跳转，并不能实现双向的回退跳转。</p>
-<p>问题：在浏览器内，总是会跳转至下一行，浏览器的页头并不是跳转的标题，不知道是什么问题~</p>
+<p>卸载某一个依赖包</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pip uninstall &lt;package-name&gt;<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -370,7 +331,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="print-no-link">#个人博客</a>
+        <a href="/tags/python/" class="print-no-link">#python</a>
       
     </div>
   
@@ -382,8 +343,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>个人博客开发日志</div>
-      <div>http://example.com/2025/03/21/个人博客开发日志/</div>
+      <div>pip依赖包管理</div>
+      <div>http://example.com/2026/06/17/pip依赖包管理/</div>
     </div>
     <div class="license-meta">
       
@@ -395,7 +356,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年3月21日</div>
+          <div>2026年6月17日</div>
         </div>
       
       
@@ -427,18 +388,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2026/06/17/pip%E4%BE%9D%E8%B5%96%E5%8C%85%E7%AE%A1%E7%90%86/" title="pip依赖包管理">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">pip依赖包管理</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/03/21/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2025/03/21/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/" title="个人博客开发日志">
+                        <span class="hidden-mobile">个人博客开发日志</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

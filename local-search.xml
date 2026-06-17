@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>pip依赖包管理</title>
+    <link href="/2026/06/17/pip%E4%BE%9D%E8%B5%96%E5%8C%85%E7%AE%A1%E7%90%86/"/>
+    <url>/2026/06/17/pip%E4%BE%9D%E8%B5%96%E5%8C%85%E7%AE%A1%E7%90%86/</url>
+    
+    <content type="html"><![CDATA[<h1 id="📦-Information-Resources"><a href="#📦-Information-Resources" class="headerlink" title="📦 Information Resources"></a>📦 Information Resources</h1><p><a href="https://blog.csdn.net/Stromboli/article/details/143825713">【Pip】如何清理 <code>pip</code> 包管理器 —— 完整指南_pip清除没用的包-CSDN博客</a><br> <a href="https://blog.csdn.net/2301_77485708/article/details/155234710">【Python包管理避坑指南】一键摸清已装pip包，轻松卸载无用依赖_pip清除没用的包-CSDN博客</a></p><h1 id="📦Blog-Body"><a href="#📦Blog-Body" class="headerlink" title="📦Blog Body"></a>📦Blog Body</h1><h2 id="首先回答问题：为什么我们需要清理pip依赖包？"><a href="#首先回答问题：为什么我们需要清理pip依赖包？" class="headerlink" title="首先回答问题：为什么我们需要清理pip依赖包？"></a>首先回答问题：为什么我们需要清理pip依赖包？</h2><p>Ans：在python开发过程中，python拥有众多优秀且功能复杂的依赖包，熟练使用依赖包是熟练使用python的关键。但是与管理编译环境版本一样，随着开发的深入，为了预防依赖包之间的冲突，我们需要使用<a href="%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%EF%BC%9F">虚拟环境</a>进行开发。在此之前，一个干净的pip就很重要了，便于之后构建虚拟环境之后进行依赖包管理与版本管理。（特此申明：本人无任何方面的处女情结！！！）</p><h2 id="如何清理pip依赖包"><a href="#如何清理pip依赖包" class="headerlink" title="如何清理pip依赖包"></a>如何清理pip依赖包</h2><p>在安装 Python 包时，pip 会默认缓存下载的包。这使得重新安装相同的包时能够更快地完成，因为它可以从缓存中获取，而不需要重新下载。然而，这也会随着时间的推移，占用大量的磁盘空间。尤其是在频繁安装、卸载包时，缓存内容会变得冗余，甚至可能会存储过时的文件，影响 pip 的性能。<br> 所以需要清除pip缓存</p><h3 id="清除pip缓存"><a href="#清除pip缓存" class="headerlink" title="清除pip缓存"></a>清除pip缓存</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 删除所有缓存文件</span><br>pip cache purge<br></code></pre></td></tr></table></figure><h3 id="卸载依赖包"><a href="#卸载依赖包" class="headerlink" title="卸载依赖包"></a>卸载依赖包</h3><p>查看当前环境的依赖包和版本</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 查看当前环境的依赖包与版本</span><br>pip list<br><span class="hljs-comment"># 查看某一个特定的包</span><br>pip show &lt;package-name&gt;<br></code></pre></td></tr></table></figure><p>批量卸载依赖包</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 导出pip所有依赖包</span><br>pip freeze &gt; requirements.txt<br><span class="hljs-comment"># 执行指令后，在根目录下，将所有包及版本以“包名==版本号”的格式导出到文件 requirements.txt 中，可用于迁移/回溯/批量删除</span><br><span class="hljs-comment"># 卸载 requirements.txt 文件中的依赖包</span><br>pip uninstall -r requirements.txt -y<br></code></pre></td></tr></table></figure><p>卸载某一个依赖包</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">pip uninstall &lt;package-name&gt;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>软件开发</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>个人博客开发日志</title>
     <link href="/2025/03/21/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/"/>
     <url>/2025/03/21/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/</url>
