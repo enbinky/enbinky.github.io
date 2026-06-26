@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>为什么我们需要虚拟环境？</title>
+    <link href="/2026/06/18/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%EF%BC%9F/"/>
+    <url>/2026/06/18/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%EF%BC%9F/</url>
+    
+    <content type="html"><![CDATA[<h2 id="首先回答问题：为什么在python开发中，我们需要虚拟环境？"><a href="#首先回答问题：为什么在python开发中，我们需要虚拟环境？" class="headerlink" title="首先回答问题：为什么在python开发中，我们需要虚拟环境？"></a>首先回答问题：为什么在python开发中，我们需要虚拟环境？</h2><p>虚拟环境的创建，便于同一生产工具中进行版本管理与包管理，避免冲突与污染。</p><h2 id="如何创建虚拟环境"><a href="#如何创建虚拟环境" class="headerlink" title="如何创建虚拟环境"></a>如何创建虚拟环境</h2><h3 id="venv"><a href="#venv" class="headerlink" title="venv"></a>venv</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 常见约定，将虚拟环境命名为 .venv</span><br>python -m venv .venv<br><span class="hljs-comment"># 激活 —— Windows（CMD / PowerShell）</span><br>.venv\Scripts\activate<br><span class="hljs-comment"># 激活成功后，命令行提示符前面会出现虚拟环境的名称。</span><br><span class="hljs-comment"># 退出虚拟环境</span><br>deactivate<br><span class="hljs-comment"># 删除虚拟环境 Windows(Powershell)</span><br>Remove-Item -Path <span class="hljs-string">&quot;.venv&quot;</span> -Recurse -Force<br><span class="hljs-built_in">rm</span> -r -fo <span class="hljs-string">&quot;.venv&quot;</span><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>软件开发</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>pip依赖包管理</title>
     <link href="/2026/06/17/pip%E4%BE%9D%E8%B5%96%E5%8C%85%E7%AE%A1%E7%90%86/"/>
     <url>/2026/06/17/pip%E4%BE%9D%E8%B5%96%E5%8C%85%E7%AE%A1%E7%90%86/</url>
