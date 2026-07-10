@@ -27,7 +27,7 @@
 <meta property="og:description" content="首先回答问题：为什么在python开发中，我们需要虚拟环境？虚拟环境的创建，便于同一生产工具中进行版本管理与包管理，避免冲突与污染。 如何创建虚拟环境venv12345678910# 常见约定，将虚拟环境命名为 .venvpython -m venv .venv# 激活 —— Windows（CMD &#x2F; PowerShell）.venv\Scripts\activate# 激活成功后，命令行提示符">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-06-18T02:40:33.000Z">
-<meta property="article:modified_time" content="2026-06-18T02:41:53.757Z">
+<meta property="article:modified_time" content="2026-07-10T13:46:00.744Z">
 <meta property="article:author" content="Quincy Gu">
 <meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary_large_image">
@@ -223,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          138 字
+          396 字
         
       </span>
     
@@ -234,7 +234,7 @@
         
         
         
-          2 分钟
+          4 分钟
         
       </span>
     
@@ -287,6 +287,13 @@
                 
                 <h2 id="首先回答问题：为什么在python开发中，我们需要虚拟环境？"><a href="#首先回答问题：为什么在python开发中，我们需要虚拟环境？" class="headerlink" title="首先回答问题：为什么在python开发中，我们需要虚拟环境？"></a>首先回答问题：为什么在python开发中，我们需要虚拟环境？</h2><p>虚拟环境的创建，便于同一生产工具中进行版本管理与包管理，避免冲突与污染。</p>
 <h2 id="如何创建虚拟环境"><a href="#如何创建虚拟环境" class="headerlink" title="如何创建虚拟环境"></a>如何创建虚拟环境</h2><h3 id="venv"><a href="#venv" class="headerlink" title="venv"></a>venv</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 常见约定，将虚拟环境命名为 .venv</span><br>python -m venv .venv<br><span class="hljs-comment"># 激活 —— Windows（CMD / PowerShell）</span><br>.venv\Scripts\activate<br><span class="hljs-comment"># 激活成功后，命令行提示符前面会出现虚拟环境的名称。</span><br><span class="hljs-comment"># 退出虚拟环境</span><br>deactivate<br><span class="hljs-comment"># 删除虚拟环境 Windows(Powershell)</span><br>Remove-Item -Path <span class="hljs-string">&quot;.venv&quot;</span> -Recurse -Force<br><span class="hljs-built_in">rm</span> -r -fo <span class="hljs-string">&quot;.venv&quot;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="conda"><a href="#conda" class="headerlink" title="conda"></a>conda</h3><p>选择anaconda虚拟环境安装，安装anaconda，并配置镜像源与系统变量。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># conda创建虚拟环境,并管理python版本</span><br>conda create --name name python=3.8<br><span class="hljs-comment"># 激活虚拟环境</span><br>conda activate --name<br><span class="hljs-comment"># 退出虚拟环境</span><br>conda deactivate<br><span class="hljs-comment"># 删除虚拟环境，前提是要先退出</span><br>conda remove --name name --all<br><span class="hljs-comment"># 列出你电脑上所有的虚拟环境</span><br>conda <span class="hljs-built_in">env</span> list<br>conda info --envs<br></code></pre></td></tr></table></figure>
+
+<p>Conda 这套管理流程最大的优势之一，就是<strong>极大地降低了虚拟环境在不同代码工程、甚至不同电脑之间迁移的难度</strong>。在深度学习开发中，如果你把环境配置写死在本地，换台电脑或者发给同事时往往会遇到“在我的电脑上能跑，在你那就不行”的崩溃情况。而 Conda 则依靠这一套指令，提供了一套标准化的迁移方案。</p>
+<h2 id="Question：cuda-虚拟环境中安装一般的软件包用pip还是cuda？"><a href="#Question：cuda-虚拟环境中安装一般的软件包用pip还是cuda？" class="headerlink" title="Question：cuda 虚拟环境中安装一般的软件包用pip还是cuda？"></a>Question：cuda 虚拟环境中安装一般的软件包用pip还是cuda？</h2><hr>
+<p>Answer: 在 CUDA 虚拟环境中安装软件包时，正确的做法是<strong>优先使用 Conda，其次使用 pip</strong>。</p>
 
                 
               </div>
